@@ -1,13 +1,14 @@
 # DDW-2024
 
-# note:
-### iedereen in eigen scene werken/maken, anders krijgen we merge conflict
+# IMPORTANT NOTE:
+### everyone *MUST* work in their own scene, otherwise we get a ton of merge conflicts
 
-DEMANDS: 
 
-The chosen theme is obvious from the product. 
+REQUIREMENTS: 
 
-If you are making a game, use the latest LTS version of Unity. 
+The chosen theme must be obvious from the product. 
+
+If you are making a game, use the latest LTS version of Unity.(Unity 6)
 
 on Your Unity canvas must be 1920 * 1080.(otherwise inconsistencies) 
 
