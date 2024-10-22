@@ -3,4 +3,17 @@ Dean, diyon, noah, quinton
 
 Theme: 
 
-Tower escape 2d game (ASCII ESCAPE) 
+snail game
+
+planning:
+
+diyon en dean: visuals
+noah en quinten: scripten / unity 
+
+wat wanneer:
+
+dinsdag: beginnen met codeeren en visuals
+Woensdag: verder werken
+Donderdag: polishen, inleveren, final touches, klaarmaken voor expo
+
+
