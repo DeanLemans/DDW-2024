@@ -1,3 +1,4 @@
 # DDW-2024
-hallo
-hoi
+
+# note:
+### iedereen in eigen scene werken/maken, anders krijgen we merge conflict
