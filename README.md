@@ -8,9 +8,9 @@
 
 The chosen theme must be obvious from the product. 
 
-If you are making a game, use the latest LTS version of Unity.(Unity 6)
+Use the latest LTS version of Unity.(Unity 6)
 
-on Your Unity canvas must be 1920 * 1080.(otherwise inconsistencies) 
+The Unity canvas must be 1920 * 1080.(otherwise inconsistencies) 
 
 Keep it clean. Keep your hands above the covers so to speak. 
 No NSFW stuff. No discrimination. No profane language. 
