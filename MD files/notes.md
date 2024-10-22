@@ -17,3 +17,5 @@ Woensdag: verder werken
 Donderdag: polishen, inleveren, final touches, klaarmaken voor expo
 
 
+hoe werkt het:
+je hebt een scjild en speer en je meot raden of je wil verdedigen of aanvallen als de countdown op nul is moet je je keuze indelen en begint de  
