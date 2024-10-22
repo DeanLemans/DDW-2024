@@ -29,7 +29,7 @@ public class DesisionPlayer : MonoBehaviour
         P2Button2 = InputSystem.actions.FindAction("M2");
         P2Button3 = InputSystem.actions.FindAction("M3");
     }
-    private void FixedUpdate()
+    public void FixedUpdate()
     {
         #region player 1
         if (P1Button1.IsPressed())
@@ -60,4 +60,30 @@ public class DesisionPlayer : MonoBehaviour
         }
     }
     #endregion
+
+
+
+    public void Result()
+    {
+        #region Player 1 result
+        if (rock1 == true && siccors2 == true) { P1Wins(); }
+        if (paper1 == true && rock2 == true) { P1Wins(); }
+        if (siccors1 == true && paper2 == true) { P1Wins(); }
+        #endregion
+        #region Player 2 result
+        if (rock2 == true && siccors1 == true) { P2Wins(); }
+        if (paper2 == true && rock1 == true) { P2Wins(); }
+        if (siccors2 == true && paper1 == true) { P2Wins(); }
+        #endregion
+    }
+    public void P1Wins()
+    {
+    
+    }
+    public void P2Wins()
+    {
+
+    }
+
+
 }
