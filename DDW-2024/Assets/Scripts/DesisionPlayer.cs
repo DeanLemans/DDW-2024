@@ -13,9 +13,9 @@ public class DesisionPlayer : MonoBehaviour
     InputAction P2Button3;
 
 
-    bool rock1 = true; bool rock2 = true;
-    bool paper1 = true; bool paper2 = true;
-    bool siccors1 = true; bool siccors2 = true;
+    bool rock1 = false; bool rock2 = false;
+    bool paper1 = false; bool paper2 = false;
+    bool siccors1 = false; bool siccors2 = false;
 
     private void Start()
     {
@@ -58,6 +58,7 @@ public class DesisionPlayer : MonoBehaviour
         {
             rock2 = false; paper2 = false; siccors2 = true;
         }
+        Result();
     }
     #endregion
 
@@ -78,11 +79,14 @@ public class DesisionPlayer : MonoBehaviour
     }
     public void P1Wins()
     {
-    
+        Debug.Log("p1");
+        Debug.Log(" rock "+ rock1 +" siccors " +siccors1 + " paper "+paper1 + rock2 + siccors2 + paper2);
+        
     }
     public void P2Wins()
     {
-
+        Debug.Log("p2");
+        Debug.Log(" rock " + rock1 + " siccors " + siccors1 + " paper " + paper1 + rock2 + siccors2 + paper2);
     }
 
 
