@@ -4,7 +4,7 @@
 **everyone *MUST* work in their own scene, otherwise we will get a ton of merge conflicts**
 
 
-## REQUIREMENTS: 
+### REQUIREMENTS: 
 
 The chosen theme must be obvious from the product. 
 
@@ -16,8 +16,9 @@ Keep it clean. Keep your hands above the covers so to speak.
 No NSFW stuff. No discrimination. No profane language. 
 (When in doubt, the answer is "No".)
 
-contributors:
-[DiyonR](https://github.com/DiyonR)
-[cheese](https://github.com/DeanLemans)
-[SLobnixly](https://github.com/SLobnixly)
-[Quirboy](https://github.com/Quirboy)
+#### Contributors:
+- [DiyonR](https://github.com/DiyonR)
+- [cheese](https://github.com/DeanLemans)
+- [SLobnixly](https://github.com/SLobnixly)
+- [Quirboy](https://github.com/Quirboy)
+
