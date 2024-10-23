@@ -160,17 +160,17 @@ public class DesisionPlayer : MonoBehaviour
     {
         Done = true;
         ai=rnd.Next(1,3);
-        if (Player == 1 && ai == 2)
+        if (Player == 1 && ai == 3)
         { WIN(); }
-        else if (Player == 1 && ai == 3)
+        else if (Player == 1 && ai == 2)
         { LOSE(); }
-        else if (Player == 2 && ai == 3)
-        { WIN(); }
         else if (Player == 2 && ai == 1)
-        { LOSE(); }
-        else if (Player == 3 && ai == 1)
         { WIN(); }
+        else if (Player == 2 && ai == 3)
+        { LOSE(); }
         else if (Player == 3 && ai == 2)
+        { WIN(); }
+        else if (Player == 3 && ai == 1)
         { LOSE(); }
         else if (Player==1 && ai==1 || Player == 2 && ai==2 || Player ==3 && ai==3) 
         { TIE(); }
@@ -182,7 +182,7 @@ public class DesisionPlayer : MonoBehaviour
     public void TIE()
     {
         manager.Tie(Player, ai);
-        
+        targetTime = 3.0f;
     }
     public void WIN() 
     {
@@ -191,8 +191,8 @@ public class DesisionPlayer : MonoBehaviour
         {
             SceneManager.LoadScene("win");
         }
-        else {targetTime = 5.0f; }
-        Debug.Log("Player health: " + P_Health);
+        else {targetTime = 3.0f; }
+        Debug.Log("AI health: " + AI_Health);
         manager.Win(Player, ai);
     }
     public void LOSE()
@@ -203,7 +203,7 @@ public class DesisionPlayer : MonoBehaviour
             SceneManager.LoadScene("lose");
         }
         else { targetTime = 3.0f; }
-        Debug.Log("AI health: " + AI_Health);
+        Debug.Log("Player health: " + P_Health);
         manager.Loss(Player, ai);
     }
 
@@ -242,7 +242,7 @@ public class DesisionPlayer : MonoBehaviour
             if (i < AI_Health) { P_hearts[i].sprite = fullheart; }
             else { AI_hearts[i].sprite = emptyHeart; }
 
-            if (i < P_Hearts)
+            if (i < AI_Hearts)
             {
                 AI_hearts[i].enabled = true;
             }
