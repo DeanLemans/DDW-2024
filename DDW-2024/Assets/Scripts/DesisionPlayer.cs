@@ -107,7 +107,7 @@ public class DesisionPlayer : MonoBehaviour
     bool Done;
     int ai;
 
-    public float targetTime = 5.0f;
+    public float targetTime = 0.0f;
 
     System.Random rnd = new System.Random();
 
@@ -157,13 +157,21 @@ public class DesisionPlayer : MonoBehaviour
 
     public void WIN() 
     {
-        SceneManager.LoadScene("win");
         AI_Health = AI_Health-1;
+        if (AI_Health <= 0) 
+        {
+            SceneManager.LoadScene("win");
+        }
+        else {targetTime = 5.0f; }
     }
     public void LOSE()
     {
         P_Health = P_Health - 1;
-        SceneManager.LoadScene("lose");
+        if (AI_Health <= 0)
+        {
+            SceneManager.LoadScene("lose");
+        }
+        else { targetTime = 5.0f; }
     }
 
     private void Update()
@@ -185,7 +193,7 @@ public class DesisionPlayer : MonoBehaviour
     }
     void timerEnded()
         {
-            //do your stuff here.
+        Done = false;
         }
 
 
