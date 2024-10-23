@@ -20,3 +20,9 @@ Donderdag: polishen, inleveren, final touches, klaarmaken voor expo
 
 hoe werkt het: je hebt een schild en speer en je meot raden of je wil verdedigen of aanvallen als de countdown op nul is moet je je keuze indelen en begint de animatie te lopen waardoor je ziet of je hebt gewonnen. eigenlijk een steen papier schaar functie.
 als iemand de juiste keuze maakt krijgt diegene een punt, na een paar rondes heeft de eerste speler die 5 punten haalt gewonnen
+
+vs AI
+
+evertime you win in RPS you damage the opponent.
+both have 5 health.
+everytime you win/lose/draw therse will be an animation that plays.
