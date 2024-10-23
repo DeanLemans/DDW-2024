@@ -75,12 +75,7 @@ public class DesisionPlayer : MonoBehaviour
         if (rock2 == true && siccors1 == true) { P2Wins(); }
         if (paper2 == true && rock1 == true) { P2Wins(); }
         if (siccors2 == true && paper1 == true) { P2Wins(); }
-
-
-        if(rock1 == true && rock2 == true) { Draw(); }
-        if (paper1 == true && paper2 == true) { Draw(); }
-        if (siccors1 == true && siccors2 == true) { Draw(); }
-        else { Draw(); }
+        else if (rock1 == true && rock2 == true|| paper1 == true && paper2 == true|| siccors1 == true && siccors2 == true) { Draw(); }
 
         #endregion
     }
@@ -98,7 +93,7 @@ public class DesisionPlayer : MonoBehaviour
     public void Draw()
     {
         Debug.Log("draw");
-        Debug.Log(" rock " + rock1 + " siccors " + siccors1 + " paper " + paper1 + rock2 + siccors2 + paper2);
+        Debug.Log(" rock " + rock1 + " paper " + siccors1 + " siccors " + paper1 + rock2 + siccors2 + paper2);
 
     }
 
