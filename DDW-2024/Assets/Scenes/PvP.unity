@@ -119,6 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!1 &555296271
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,6 +519,8 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1727088592
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,6 +613,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!1 &2081589968
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,11 +764,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081589968}
   m_CullTransparentMesh: 1
+=======
+--- !u!1001 &7608282040300881878
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4685808545321552766, guid: 51cd39cc113cb4d4e8d7c00b75e2c4c6, type: 3}
+      propertyPath: m_Name
+      value: Gamemanager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957594006055165154, guid: 51cd39cc113cb4d4e8d7c00b75e2c4c6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.004298
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957594006055165154, guid: 51cd39cc113cb4d4e8d7c00b75e2c4c6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.3830974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957594006055165154, guid: 51cd39cc113cb4d4e8d7c00b75e2c4c6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.543349
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957594006055165154, guid: 51cd39cc113cb4d4e8d7c00b75e2c4c6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957594006055165154, guid: 51cd39cc113cb4d4e8d7c00b75e2c4c6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957594006055165154, guid: 51cd39cc113cb4d4e8d7c00b75e2c4c6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957594006055165154, guid: 51cd39cc113cb4d4e8d7c00b75e2c4c6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957594006055165154, guid: 51cd39cc113cb4d4e8d7c00b75e2c4c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957594006055165154, guid: 51cd39cc113cb4d4e8d7c00b75e2c4c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957594006055165154, guid: 51cd39cc113cb4d4e8d7c00b75e2c4c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51cd39cc113cb4d4e8d7c00b75e2c4c6, type: 3}
+>>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1727088595}
+<<<<<<< Updated upstream
   - {fileID: 1576047146}
   - {fileID: 1184686206}
   - {fileID: 555296274}
+=======
+  - {fileID: 7608282040300881878}
+>>>>>>> Stashed changes
