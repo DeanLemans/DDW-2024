@@ -151,10 +151,17 @@ public class DesisionPlayer : MonoBehaviour
         { WIN(); }
         else if (Player == 3 && ai == 2)
         { LOSE(); }
-        else if (Player==1 && ai==1 || Player == 2 && ai==2 || Player ==3 && ai==3) { } 
-
+        else if (Player==1 && ai==1 || Player == 2 && ai==2 || Player ==3 && ai==3) 
+        { TIE(); }
+        if (ai == 1) { Debug.Log("AI chose Rock"); }
+        else if (ai == 2) { Debug.Log("AI chose Paper"); }
+        else if (ai == 3) { Debug.Log("AI chose Scissors"); }
+        
     }
-
+    public void TIE()
+    {
+        Debug.Log("Tie");
+    }
     public void WIN() 
     {
         AI_Health = AI_Health-1;
@@ -163,6 +170,7 @@ public class DesisionPlayer : MonoBehaviour
             SceneManager.LoadScene("win");
         }
         else {targetTime = 5.0f; }
+        Debug.Log("Player health: " + P_Health);
     }
     public void LOSE()
     {
@@ -171,7 +179,8 @@ public class DesisionPlayer : MonoBehaviour
         {
             SceneManager.LoadScene("lose");
         }
-        else { targetTime = 5.0f; }
+        else { targetTime = 3.0f; }
+        Debug.Log("AI health: " + AI_Health);
     }
 
     private void Update()
@@ -195,6 +204,9 @@ public class DesisionPlayer : MonoBehaviour
         {
         Done = false;
         }
+
+
+
 
 
 
