@@ -2,10 +2,12 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.Windows;
 
 public class DesisionPlayer : MonoBehaviour
 {
+    
     int P_Health = 3;
     int AI_Health = 3;
     #region test
@@ -106,16 +108,24 @@ public class DesisionPlayer : MonoBehaviour
     #endregion test
     bool Done;
     int ai;
+    int Player;
+
+
+    private ScoreManager manager;
 
     public float targetTime = 0.0f;
 
     System.Random rnd = new System.Random();
-
+    private void Start()
+    {
+        manager = GameObject.FindObjectOfType<ScoreManager>();
+    }
     public void Rock()
     {
         if (!Done)
         {
-            AI(1);
+            Player = 1;
+            AI();
             Debug.Log("Rock");
         }
     }
@@ -123,7 +133,8 @@ public class DesisionPlayer : MonoBehaviour
     {
         if (!Done)
         {
-            AI(2);
+            Player = 2;
+            AI();
             Debug.Log("Paper");
         }
     }
@@ -131,11 +142,12 @@ public class DesisionPlayer : MonoBehaviour
     {
         if (!Done)
         {
-            AI(3);
+            Player = 3;
+            AI();
             Debug.Log("Siccors");
         }
     }
-    public void AI(int Player)
+    public void AI()
     {
         Done = true;
         ai=rnd.Next(1,3);
@@ -160,7 +172,8 @@ public class DesisionPlayer : MonoBehaviour
     }
     public void TIE()
     {
-        Debug.Log("Tie");
+        manager.Tie(Player, ai);
+        
     }
     public void WIN() 
     {
@@ -171,6 +184,7 @@ public class DesisionPlayer : MonoBehaviour
         }
         else {targetTime = 5.0f; }
         Debug.Log("Player health: " + P_Health);
+        manager.Win(Player, ai);
     }
     public void LOSE()
     {
@@ -181,6 +195,7 @@ public class DesisionPlayer : MonoBehaviour
         }
         else { targetTime = 3.0f; }
         Debug.Log("AI health: " + AI_Health);
+        manager.Loss(Player, ai);
     }
 
     private void Update()
