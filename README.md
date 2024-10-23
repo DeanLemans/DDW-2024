@@ -2,7 +2,7 @@
 
 ## IMPORTANT NOTE:
 - **Everyone *MUST* work in their own scene. (Reasoning: merge conflicts)**
-- **The Unity canvas must be Full HD 1920 * 1080. (Reasoning: consistensy)**
+- **The Unity canvas must be Full HD 1920 * 1080. and zoomed out to max (Reasoning: consistensy)**
 
 ### REQUIREMENTS for project: 
 
