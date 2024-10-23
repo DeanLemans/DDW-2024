@@ -1,12 +1,16 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Windows;
 
 public class DesisionPlayer : MonoBehaviour
 {
-    InputAction P1Button1;  
-    InputAction P1Button2;  
-    InputAction P1Button3;  
+
+    #region test
+    /*
+    InputAction P1Button1;
+    InputAction P1Button2;
+    InputAction P1Button3;
 
     InputAction P2Button1;
     InputAction P2Button2;
@@ -19,7 +23,7 @@ public class DesisionPlayer : MonoBehaviour
 
     private void Start()
     {
-        
+
         P1Button1 = InputSystem.actions.FindAction("N1");
         P1Button2 = InputSystem.actions.FindAction("N2");
         P1Button3 = InputSystem.actions.FindAction("N3");
@@ -42,7 +46,7 @@ public class DesisionPlayer : MonoBehaviour
         }
         if (P1Button3.IsPressed())
         {
-            rock1 = false; paper1 = false; siccors1=true;
+            rock1 = false; paper1 = false; siccors1 = true;
         }
         #endregion 
         #region player 2
@@ -95,6 +99,63 @@ public class DesisionPlayer : MonoBehaviour
         Debug.Log("draw");
         Debug.Log(" rock " + rock1 + " paper " + siccors1 + " siccors " + paper1 + rock2 + siccors2 + paper2);
 
+    }
+    */
+    #endregion test
+    bool Done;
+    int ai;
+    System.Random rnd = new System.Random();
+
+    public void Rock()
+    {
+        if (!Done)
+        {
+            AI(1);
+            Debug.Log("Rock");
+        }
+    }
+    public void Paper()
+    {
+        if (!Done)
+        {
+            AI(2);
+            Debug.Log("Paper");
+        }
+    }
+    public void Siccors()
+    {
+        if (!Done)
+        {
+            AI(3);
+            Debug.Log("Siccors");
+        }
+    }
+    public void AI(int Player)
+    {
+        Done = true;
+        ai=rnd.Next(1,3);
+        if(Player==1 && ai == 2)
+        {WIN();}
+        else if (Player==1 && ai ==3)
+        { LOSE();}
+        if (Player==2 && ai ==3)
+        { WIN();}
+        else if (Player == 2 && ai == 1)
+        { LOSE(); }
+        if (Player == 3 && ai == 1)
+        { WIN(); }
+        else if (Player == 3 && ai == 2)
+        { LOSE(); }
+
+
+    }
+    public void WIN() 
+    {
+        Debug.Log("win");
+    }
+    public void LOSE()
+    {
+        Debug.Log("win");
     }
 
 }
