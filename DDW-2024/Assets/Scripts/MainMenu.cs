@@ -22,6 +22,12 @@ public class MainMenu : MonoBehaviour
         Debug.Log("the entity know as player has restarted the game");
     }
 
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("tutorial");
+        Debug.Log("the entity know as player initiated the tutorial");
+    }
+
     public void NuhUh()
     {
         SceneManager.LoadScene("lose");
