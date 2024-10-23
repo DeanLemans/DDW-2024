@@ -1,15 +1,14 @@
 ## [[Downloads/Releases](https://github.com/DeanLemans/DDW-2024/releases)]
 # DDW-2024  snail-fight
 
-## IMPORTANT NOTE:
+## IMPORTANT WORKING IN PROJECT:
 - **Everyone *MUST* work in their own scene. (Reasoning: merge conflicts)**
 - **The Unity canvas must be Full HD 1920 * 1080. and zoomed out to max (Reasoning: consistensy)**
+- **Using Unity 6000.0.23 (Reasoning: consistensy)**
 
-### REQUIREMENTS for project: 
+### school requirenments for project: 
 
 The chosen theme must be obvious from the product. 
-
-Use the latest LTS version of Unity.(Unity 6)
 
 Keep it clean. Keep your hands above the covers so to speak. 
 No NSFW stuff. No discrimination. No profane language. 
@@ -25,4 +24,5 @@ No NSFW stuff. No discrimination. No profane language.
 
 ## License
 
-DDW-2024 is released under the [MIT License](https://opensource.org/license/mit).
+- Our source code is released under the [MIT License](https://opensource.org/license/mit).
+- Our assets are released under the [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
