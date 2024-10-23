@@ -20,8 +20,8 @@ public class ScoreManager : MonoBehaviour
         else if (ai == 3) { AI = "Scissors"; }
 
 
-
-        ResultText.text = "You Tied: you both used "+Player;
+        ResultText.text = "You Won: you used " + Player + " and the AI used " + AI;
+        
     }
     public void Loss(int player, int ai)
     {
@@ -44,6 +44,6 @@ public class ScoreManager : MonoBehaviour
         else if (player == 2) { Player = "Paper"; }
         else if (player == 3) { Player = "Scissors"; }
 
-        ResultText.text = "You Won: you used " + Player + " and the AI used " + AI;
+        ResultText.text = "You Tied: you both used " + Player;
     }
 }

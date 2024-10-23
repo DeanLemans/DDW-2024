@@ -4,11 +4,13 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.Windows;
-
+using UnityEngine.UI;
 public class DesisionPlayer : MonoBehaviour
 {
-    
+    public int P_Hearts = 3;
     int P_Health = 3;
+
+    public int AI_Hearts = 3;
     int AI_Health = 3;
     #region test
     /*
@@ -111,6 +113,13 @@ public class DesisionPlayer : MonoBehaviour
     int Player;
 
 
+    public Image[] P_hearts;
+    public Image[] AI_hearts;
+
+    public Sprite fullheart;
+    public Sprite emptyHeart;
+
+
     private ScoreManager manager;
 
     public float targetTime = 0.0f;
@@ -208,10 +217,42 @@ public class DesisionPlayer : MonoBehaviour
             {
                 timerEnded();
             }
+        if (P_Health > P_Hearts) { P_Health = P_Hearts; }
+        for (int i = 0; i < P_hearts.Length; i++)
+        {
 
-       
+            if (i < P_Health) { P_hearts[i].sprite = fullheart; }
+            else { P_hearts[i].sprite = emptyHeart; }
 
-       
+            if (i < P_Hearts)
+            {
+                P_hearts[i].enabled = true;
+            }
+            else
+            {
+                P_hearts[i].enabled = false;
+            }
+        }
+
+
+        if (AI_Health > AI_Hearts) { AI_Health = AI_Hearts; }
+        for (int i = 0; i < AI_hearts.Length; i++)
+        {
+
+            if (i < AI_Health) { P_hearts[i].sprite = fullheart; }
+            else { AI_hearts[i].sprite = emptyHeart; }
+
+            if (i < P_Hearts)
+            {
+                AI_hearts[i].enabled = true;
+            }
+            else
+            {
+                AI_hearts[i].enabled = false;
+            }
+        }
+
+
 
 
     }
