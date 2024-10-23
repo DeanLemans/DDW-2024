@@ -1,3 +1,4 @@
+## [[Downloads/Releases](https://github.com/DeanLemans/DDW-2024/releases)]
 # DDW-2024  snail-fight
 
 ## IMPORTANT NOTE:
@@ -14,8 +15,6 @@ Keep it clean. Keep your hands above the covers so to speak.
 No NSFW stuff. No discrimination. No profane language. 
 (When in doubt, the answer is "No".)
 
-
-## [Download page](https://github.com/DeanLemans/DDW-2024/releases)
 
 ## Contributors:
 - [DiyonR](https://github.com/DiyonR)
