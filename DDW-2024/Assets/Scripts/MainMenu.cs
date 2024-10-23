@@ -7,30 +7,36 @@ public class MainMenu : MonoBehaviour
     public void Play() 
     {
         SceneManager.LoadScene("PVP");
-        Debug.Log("the entity know as player has begun playing the game"); 
+        Debug.Log("tThe entity know as player has begun playing the game."); 
     }
 
     public void Quit()
     {
         Application.Quit();
-        Debug.Log("the entity know as player has quit the game");
+        Debug.Log("The entity know as player has quit the game.");
     }
 
     public void Restart()
     {
         SceneManager.LoadScene("main menu");
-        Debug.Log("the entity know as player has restarted the game");
+        Debug.Log("The entity know as player has restarted the game.");
     }
 
     public void Tutorial()
     {
         SceneManager.LoadScene("tutorial");
-        Debug.Log("the entity know as player initiated the tutorial");
+        Debug.Log("The entity know as player initiated the tutorial.");
+    }
+
+    public void About()
+    {
+        SceneManager.LoadScene("about");
+        Debug.Log("The entity know as player look at our about page.");
     }
 
     public void NuhUh()
     {
         SceneManager.LoadScene("lose");
-        Debug.Log("the entity know as player has restarted the game");
+        Debug.Log("The entity know as player has restarted the game.");
     }
 }
