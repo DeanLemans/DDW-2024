@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.Windows;
 
 public class DesisionPlayer : MonoBehaviour
@@ -151,11 +152,11 @@ public class DesisionPlayer : MonoBehaviour
     }
     public void WIN() 
     {
-        Debug.Log("win");
+        SceneManager.LoadScene("win");
     }
     public void LOSE()
     {
-        Debug.Log("win");
+        SceneManager.LoadScene("lose");
     }
 
 }
