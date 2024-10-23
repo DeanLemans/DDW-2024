@@ -6,7 +6,8 @@ using UnityEngine.Windows;
 
 public class DesisionPlayer : MonoBehaviour
 {
-
+    int P_Health = 3;
+    int AI_Health = 3;
     #region test
     /*
     InputAction P1Button1;
@@ -105,6 +106,9 @@ public class DesisionPlayer : MonoBehaviour
     #endregion test
     bool Done;
     int ai;
+
+    public float targetTime = 5.0f;
+
     System.Random rnd = new System.Random();
 
     public void Rock()
@@ -135,28 +139,57 @@ public class DesisionPlayer : MonoBehaviour
     {
         Done = true;
         ai=rnd.Next(1,3);
-        if(Player==1 && ai == 2)
-        {WIN();}
-        else if (Player==1 && ai ==3)
-        { LOSE();}
-        if (Player==2 && ai ==3)
-        { WIN();}
+        if (Player == 1 && ai == 2)
+        { WIN(); }
+        else if (Player == 1 && ai == 3)
+        { LOSE(); }
+        else if (Player == 2 && ai == 3)
+        { WIN(); }
         else if (Player == 2 && ai == 1)
         { LOSE(); }
-        if (Player == 3 && ai == 1)
+        else if (Player == 3 && ai == 1)
         { WIN(); }
         else if (Player == 3 && ai == 2)
         { LOSE(); }
-
+        else if (Player==1 && ai==1 || Player == 2 && ai==2 || Player ==3 && ai==3) { } 
 
     }
+
     public void WIN() 
     {
         SceneManager.LoadScene("win");
+        AI_Health = AI_Health-1;
     }
     public void LOSE()
     {
+        P_Health = P_Health - 1;
         SceneManager.LoadScene("lose");
     }
 
+    private void Update()
+    {
+        
+
+            targetTime -= Time.deltaTime;
+
+            if (targetTime <= 0.0f)
+            {
+                timerEnded();
+            }
+
+       
+
+       
+
+
+    }
+    void timerEnded()
+        {
+            //do your stuff here.
+        }
+
+
+
 }
+
+
