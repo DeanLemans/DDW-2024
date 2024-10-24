@@ -8,10 +8,10 @@ using UnityEngine.UI;
 public class DesisionPlayer : MonoBehaviour
 {
     public int P_Hearts = 3;
-    int P_Health = 3;
+    public int P_Health = 3;
 
     public int AI_Hearts = 3;
-    int AI_Health = 3;
+    public int AI_Health = 3;
     #region test
     /*
     InputAction P1Button1;
@@ -194,46 +194,6 @@ public class DesisionPlayer : MonoBehaviour
         else {targetTime = 3.0f; }
         Debug.Log("AI health: " + AI_Health);
         manager.Win(Player, ai);
-    }
-    public void LOSE()
-    {
-        P_Health = P_Health - 1;
-        if (AI_Health <= 0)
-        {
-            SceneManager.LoadScene("lose");
-        }
-        else { targetTime = 3.0f; }
-        Debug.Log("Player health: " + P_Health);
-        manager.Loss(Player, ai);
-    }
-
-    private void Update()
-    {
-        
-
-            targetTime -= Time.deltaTime;
-
-            if (targetTime <= 0.0f)
-            {
-                timerEnded();
-            }
-        if (P_Health > P_Hearts) { P_Health = P_Hearts; }
-        for (int i = 0; i < P_hearts.Length; i++)
-        {
-
-            if (i < P_Health) { P_hearts[i].sprite = fullheart; }
-            else { P_hearts[i].sprite = emptyHeart; }
-
-            if (i < P_Hearts)
-            {
-                P_hearts[i].enabled = true;
-            }
-            else
-            {
-                P_hearts[i].enabled = false;
-            }
-        }
-
 
         if (AI_Health > AI_Hearts) { AI_Health = AI_Hearts; }
         for (int i = 0; i < AI_hearts.Length; i++)
@@ -251,11 +211,54 @@ public class DesisionPlayer : MonoBehaviour
                 AI_hearts[i].enabled = false;
             }
         }
+    }
+    public void LOSE()
+    {
+        P_Health = P_Health - 1;
+        if (P_Health <= 0)
+        {
+            SceneManager.LoadScene("lose");
+        }
+        else { targetTime = 3.0f; }
+        Debug.Log("Player health: " + P_Health);
+        manager.Loss(Player, ai);
+
+        if (P_Health > P_Hearts) { P_Health = P_Hearts; }
+        for (int i = 0; i < P_hearts.Length; i++)
+        {
+
+            if (i < P_Health) { P_hearts[i].sprite = fullheart; }
+            else { P_hearts[i].sprite = emptyHeart; }
+
+            if (i < P_Hearts)
+            {
+                P_hearts[i].enabled = true;
+            }
+            else
+            {
+                P_hearts[i].enabled = false;
+            }
+        }
+
+    }
+
+    private void Update()
+    {
+        
+
+            targetTime -= Time.deltaTime;
+
+            if (targetTime <= 0.0f)
+            {
+                timerEnded();
+            }
+        
 
 
 
 
     }
+    
     void timerEnded()
         {
         Done = false;
