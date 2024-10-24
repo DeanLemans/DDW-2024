@@ -91,9 +91,10 @@ public class MultiplayerCode : MonoBehaviour
     {
         if (player == 1)
         {
-            if (!DoneP1)
+            if (DoneP1 == false)
                 {
                     Player1 = 1;
+                    DoneP1 = true;
                     AI();
                     Debug.Log("Rock");
                 }
@@ -101,9 +102,10 @@ public class MultiplayerCode : MonoBehaviour
 
         else if (player == 2)
         {
-            if (!DoneP2)
+            if (DoneP2 == false)
             {
                 Player2 = 1;
+                DoneP2 = true;
                 AI();
                 Debug.Log("Rock");
             }
@@ -113,9 +115,10 @@ public class MultiplayerCode : MonoBehaviour
     {
         if (player == 1)
         {
-            if (!DoneP1)
+            if (DoneP1==false)
             {
                 Player1 = 2;
+                DoneP1 = true;
                 AI();
                 Debug.Log("Paper");
             }
@@ -123,9 +126,10 @@ public class MultiplayerCode : MonoBehaviour
 
         else if (player == 2)
         {
-            if (!DoneP2)
+            if (DoneP2 == false)
             {
                 Player2 = 2;
+                DoneP2 = true;
                 AI();
                 Debug.Log("Paper");
             }
@@ -135,9 +139,10 @@ public class MultiplayerCode : MonoBehaviour
     {
         if (player == 1)
         {
-            if (!DoneP1)
+            if (DoneP1 == false)
             {
                 Player1 = 1;
+                DoneP1 = true;
                 AI();
                 Debug.Log("Scissors");
             }
@@ -145,9 +150,10 @@ public class MultiplayerCode : MonoBehaviour
 
         else if (player == 2)
         {
-            if (!DoneP2)
+            if (DoneP2 == false)
             {
                 Player2 = 1;
+                DoneP2 = true;
                 AI();
                 Debug.Log("Scissors");
             }
@@ -157,7 +163,7 @@ public class MultiplayerCode : MonoBehaviour
 
     public void AI()
     {
-        if (DoneP1 && DoneP2)
+        if (DoneP1== true && DoneP2 == true)
         {
             if (Player1 == 1 && Player2 == 3)
             { WIN(); }
@@ -241,8 +247,10 @@ public class MultiplayerCode : MonoBehaviour
     private void Update()
     {
 
-
-        targetTime -= Time.deltaTime;
+        if (DoneP1 == true && DoneP2 == true)
+        {
+            targetTime -= Time.deltaTime;
+        }
 
         if (targetTime <= 0.0f)
         {
