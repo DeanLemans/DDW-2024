@@ -136,7 +136,7 @@ public class DesisionPlayer : MonoBehaviour
         {
             Player = 1;
             AI();
-            Debug.Log("Rock");
+            Debug.Log("Shield");
         }
     }
     public void Paper()
@@ -145,7 +145,7 @@ public class DesisionPlayer : MonoBehaviour
         {
             Player = 2;
             AI();
-            Debug.Log("Paper");
+            Debug.Log("MagicScroll");
         }
     }
     public void Siccors()
@@ -154,7 +154,7 @@ public class DesisionPlayer : MonoBehaviour
         {
             Player = 3;
             AI();
-            Debug.Log("Siccors");
+            Debug.Log("Sword");
         }
     }
     public void AI()
@@ -175,9 +175,9 @@ public class DesisionPlayer : MonoBehaviour
         { LOSE(); }
         else if (Player==1 && ai==1 || Player == 2 && ai==2 || Player ==3 && ai==3) 
         { TIE(); }
-        if (ai == 1) { Debug.Log("AI chose Rock"); }
-        else if (ai == 2) { Debug.Log("AI chose Paper"); }
-        else if (ai == 3) { Debug.Log("AI chose Scissors"); }
+        if (ai == 1) { Debug.Log("AI used Shield"); }
+        else if (ai == 2) { Debug.Log("AI used MagicScroll"); }
+        else if (ai == 3) { Debug.Log("AI used Sword"); }
         
     }
     public void TIE()
@@ -246,31 +246,18 @@ public class DesisionPlayer : MonoBehaviour
 
     private void Update()
     {
-        
-
             targetTime -= Time.deltaTime;
 
             if (targetTime <= 0.0f)
             {
                 timerEnded();
             }
-        
-
-
-
-
     }
     
     void timerEnded()
         {
         Done = false;
         }
-
-
-
-
-
-
 }
 
 
