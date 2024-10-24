@@ -14,6 +14,8 @@ public class MultiplayerCode : MonoBehaviour
     InputAction P2Button2;
     InputAction P2Button3;
 
+
+
     public int P_Hearts = 3;
     public int P_Health = 3;
 
@@ -50,6 +52,7 @@ public class MultiplayerCode : MonoBehaviour
     private ScoreManager manager;
 
     public float targetTime = 0.0f;
+    public bool timerEnd = false;
 
     System.Random rnd = new System.Random();
 
@@ -165,6 +168,7 @@ public class MultiplayerCode : MonoBehaviour
     {
         if (DoneP1== true && DoneP2 == true)
         {
+            timerEnd = false;
             if (Player1 == 1 && Player2 == 3)
             { WIN(); }
             else if (Player1 == 1 && Player2 == 2)
@@ -252,7 +256,7 @@ public class MultiplayerCode : MonoBehaviour
             targetTime -= Time.deltaTime;
         }
 
-        if (targetTime <= 0.0f)
+        if (targetTime <= 0.0f&& timerEnd == false)
         {
             timerEnded();
         }
@@ -265,6 +269,7 @@ public class MultiplayerCode : MonoBehaviour
 
     void timerEnded()
     {
+        timerEnd = true;
         DoneP1 = false;
         DoneP2 = false;
     }
