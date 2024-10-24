@@ -192,7 +192,7 @@ public class MultiplayerCode : MonoBehaviour
     public void TIE()
     {
         manager.Tie(Player1, Player2);
-        targetTime = 3.0f;
+        targetTime = 1.5f;
     }
     public void WIN()
     {
@@ -202,7 +202,7 @@ public class MultiplayerCode : MonoBehaviour
         {
             SceneManager.LoadScene("win");
         }
-        else { targetTime = 3.0f; }
+        else { targetTime = 1.5f; }
         Debug.Log("AI health: " + AI_Health);
         manager.Win(Player1, Player2);
 
@@ -231,7 +231,7 @@ public class MultiplayerCode : MonoBehaviour
         {
             SceneManager.LoadScene("lose");
         }
-        else { targetTime = 3.0f; }
+        else { targetTime = 1.5f; }
         Debug.Log("Player health: " + P_Health);
         manager.Loss(Player1, Player2);
 
