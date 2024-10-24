@@ -112,10 +112,13 @@ public class DesisionPlayer : MonoBehaviour
     int ai;
     int Player;
 
+    private Animator P1;
+    private Animator P2;
+
 
     public Image[] P_hearts;
     public Image[] AI_hearts;
-    Animator animator;
+
     public Sprite fullheart;
     public Sprite emptyHeart;
 
@@ -128,7 +131,8 @@ public class DesisionPlayer : MonoBehaviour
     private void Start()
     {
         manager = UnityEngine.Object.FindFirstObjectByType<ScoreManager>();
-        animator = GetComponent<Animator>();
+        P1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Animator>();
+        P2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Animator>();
     }
     public void Rock()
     {
@@ -187,7 +191,8 @@ public class DesisionPlayer : MonoBehaviour
     }
     public void WIN() 
     {
-        //animator.SetTrigger("attacking");
+        
+        P1.SetTrigger("Fight");
         AI_Health = AI_Health-1;
         if (AI_Health <= 0) 
         {
@@ -216,6 +221,7 @@ public class DesisionPlayer : MonoBehaviour
     }
     public void LOSE()
     {
+        P2.SetTrigger("Fight");
         P_Health = P_Health - 1;
         if (P_Health <= 0)
         {
