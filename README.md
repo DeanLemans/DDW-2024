@@ -1,5 +1,5 @@
 ## [[Downloads/Releases](https://github.com/DeanLemans/DDW-2024/releases)]
-# DDW-2024  Rock Paper Snail
+# Rock Paper Snail DDW-2024  
 
 ## IMPORTANT WORKING IN PROJECT:
 - **Everyone *MUST* work in their own scene. (Reasoning: merge conflicts)**
