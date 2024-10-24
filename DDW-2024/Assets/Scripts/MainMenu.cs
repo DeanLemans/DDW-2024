@@ -39,4 +39,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("lose");
         Debug.Log("The entity know as player has restarted the game.");
     }
+    public void Multi()
+    {
+        SceneManager.LoadScene("Test_Noah");
+        Debug.Log("The entity know as player has selected multiplayer the game.");
+    }
 }
