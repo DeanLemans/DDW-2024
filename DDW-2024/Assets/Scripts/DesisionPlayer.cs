@@ -215,7 +215,7 @@ public class DesisionPlayer : MonoBehaviour
     public void LOSE()
     {
         P_Health = P_Health - 1;
-        if (AI_Health <= 0)
+        if (P_Health <= 0)
         {
             SceneManager.LoadScene("lose");
         }
