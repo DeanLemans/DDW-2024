@@ -8,10 +8,10 @@ using UnityEngine.UI;
 public class DesisionPlayer : MonoBehaviour
 {
     public int P_Hearts = 3;
-    int P_Health = 3;
+    public int P_Health = 3;
 
     public int AI_Hearts = 3;
-    int AI_Health = 3;
+    public int AI_Health = 3;
     #region test
     /*
     InputAction P1Button1;
@@ -127,7 +127,7 @@ public class DesisionPlayer : MonoBehaviour
     System.Random rnd = new System.Random();
     private void Start()
     {
-        manager = GameObject.FindObjectOfType<ScoreManager>();
+        manager = UnityEngine.Object.FindFirstObjectByType<ScoreManager>();
     }
     public void Rock()
     {
@@ -215,7 +215,7 @@ public class DesisionPlayer : MonoBehaviour
     public void LOSE()
     {
         P_Health = P_Health - 1;
-        if (AI_Health <= 0)
+        if (P_Health <= 0)
         {
             SceneManager.LoadScene("lose");
         }
