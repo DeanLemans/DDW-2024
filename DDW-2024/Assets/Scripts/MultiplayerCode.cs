@@ -29,8 +29,8 @@ public class MultiplayerCode : MonoBehaviour
     private void Start()
     {
         manager = UnityEngine.Object.FindFirstObjectByType<ScoreManager>();
-         P1 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Animator>();
-         P2 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Animator>();
+         P1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Animator>();
+         P2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Animator>();
         P1Button1 = InputSystem.actions.FindAction("N1");
         P1Button2 = InputSystem.actions.FindAction("N2");
         P1Button3 = InputSystem.actions.FindAction("N3");
