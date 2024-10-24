@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 3f168ca2f0a89f545aec2052fbb3992a
+guid: bdefc46541f5a134fb3a04d1e016fd71
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 585449057990610270
-    second: Heart-3.png (1)_0
-  - first:
-      213: 5415395282390533313
-    second: Heart-3.png (1)_1
-  - first:
-      213: -7773483733297174672
-    second: Heart-3.png (1)_2
+      213: -8878088185706026076
+    second: pause_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,17 +109,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Heart-3.png (1)_0
+      name: pause_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 134
-        width: 57
-        height: 52
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5d0e9ff0deef1800800000000000000
-      internalID: 585449057990610270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart-3.png (1)_1
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 70
-        width: 57
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c4c63d3159572b40800000000000000
-      internalID: 5415395282390533313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart-3.png (1)_2
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 6
-        width: 57
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0776b81fab90f1490800000000000000
-      internalID: -7773483733297174672
+      spriteID: 4ab666e45d1bac480800000000000000
+      internalID: -8878088185706026076
       vertices: []
       indices: 
       edges: []
@@ -197,10 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Heart-3.png (1)_0: 585449057990610270
-      Heart-3.png (1)_1: 5415395282390533313
-      Heart-3.png (1)_2: -7773483733297174672
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
