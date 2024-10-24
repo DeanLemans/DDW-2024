@@ -2,15 +2,18 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    public GameObject PausePanel;
+
+    public void Pause() 
     {
-        
+        PausePanel.SetActive(true);
+        Time.timeScale = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Continue() 
     {
-        
+        PausePanel.SetActive(false);
+        Time.timeScale = 0;
     }
 }
