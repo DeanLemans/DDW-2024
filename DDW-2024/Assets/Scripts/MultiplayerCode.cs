@@ -10,6 +10,9 @@ public class MultiplayerCode : MonoBehaviour
     InputAction P1Button2;
     InputAction P1Button3;
 
+    private Animator P1;
+    private Animator P2;
+
     InputAction P2Button1;
     InputAction P2Button2;
     InputAction P2Button3;
@@ -26,10 +29,11 @@ public class MultiplayerCode : MonoBehaviour
     private void Start()
     {
         manager = UnityEngine.Object.FindFirstObjectByType<ScoreManager>();
+         P1 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Animator>();
+         P2 = GameObject.FindGameObjectWithTag("Player1").GetComponent<Animator>();
         P1Button1 = InputSystem.actions.FindAction("N1");
         P1Button2 = InputSystem.actions.FindAction("N2");
         P1Button3 = InputSystem.actions.FindAction("N3");
-
 
         P2Button1 = InputSystem.actions.FindAction("M1");
         P2Button2 = InputSystem.actions.FindAction("M2");
@@ -192,6 +196,7 @@ public class MultiplayerCode : MonoBehaviour
     }
     public void WIN()
     {
+        P1.SetTrigger("Fight");
         AI_Health = AI_Health - 1;
         if (AI_Health <= 0)
         {
@@ -220,6 +225,7 @@ public class MultiplayerCode : MonoBehaviour
     }
     public void LOSE()
     {
+        P2.SetTrigger("Fight");
         P_Health = P_Health - 1;
         if (P_Health <= 0)
         {
