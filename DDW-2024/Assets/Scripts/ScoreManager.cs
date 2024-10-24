@@ -44,6 +44,6 @@ public class ScoreManager : MonoBehaviour
         else if (player == 2) { Player = "Magic"; }
         else if (player == 3) { Player = "Sword"; }
 
-        ResultText.text = "both chose " + Player + " [ Its a Tie! ]";
+        ResultText.text = "Both chose " + Player + " [ Its a Tie! ]";
     }
 }
