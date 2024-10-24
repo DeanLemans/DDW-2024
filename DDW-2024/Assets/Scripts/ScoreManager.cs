@@ -20,7 +20,7 @@ public class ScoreManager : MonoBehaviour
         else if (ai == 3) { AI = "Scissors"; }
 
 
-        ResultText.text = "You used " + Player + " and the AI used " + AI + " [ Clash Won! ]";
+        ResultText.text = "You used " + Player + " and the oponent used " + AI + " [ Clash Won! ]";
         
     }
     public void Loss(int player, int ai)
