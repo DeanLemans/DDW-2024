@@ -187,7 +187,7 @@ public class DesisionPlayer : MonoBehaviour
     }
     public void WIN() 
     {
-        animator.SetTrigger("attacking");
+        //animator.SetTrigger("attacking");
         AI_Health = AI_Health-1;
         if (AI_Health <= 0) 
         {
