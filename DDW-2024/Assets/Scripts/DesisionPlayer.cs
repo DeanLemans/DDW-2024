@@ -127,7 +127,7 @@ public class DesisionPlayer : MonoBehaviour
     System.Random rnd = new System.Random();
     private void Start()
     {
-        manager = GameObject.FindObjectOfType<ScoreManager>();
+        manager = UnityEngine.Object.FindFirstObjectByType<ScoreManager>();
     }
     public void Rock()
     {
