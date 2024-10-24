@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PvP.unity
     guid: 0c93563c5cbe9a647bc07423d23cb014
   - enabled: 1
+    path: Assets/Scenes/Test_Noah.unity
+    guid: 620bc2fad33936a40a519ad3527bb6a7
+  - enabled: 1
     path: Assets/Scenes/win.unity
     guid: f2366364547b12c428d25edc7eaa3a9e
   - enabled: 1
