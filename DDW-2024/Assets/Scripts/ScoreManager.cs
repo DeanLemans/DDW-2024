@@ -20,23 +20,23 @@ public class ScoreManager : MonoBehaviour
         else if (ai == 3) { AI = "Scissors"; }
 
 
-        ResultText.text = "You used " + Player + " and the AI used " + AI + "[ clash won! ]";
+        ResultText.text = "You used " + Player + " and the oponent used " + AI + " [ Clash Won! ]";
         
     }
     public void Loss(int player, int ai)
     {
         if (player == 1) { Player = "Shield"; }
-        else if (player == 2) { Player = "Magic_Scroll"; }
+        else if (player == 2) { Player = "Magic Scroll"; }
         else if (player == 3) { Player = "Sword"; }
 
 
         if (ai == 1) { AI = "Shield"; }
-        else if (ai == 2) { AI = "Magic_Scroll"; }
+        else if (ai == 2) { AI = "Magic Scroll"; }
         else if (ai == 3) { AI = "Sword"; }
 
 
 
-        ResultText.text = "You used " + Player + " and oponent used " + AI + "[ clash lost! ]";
+        ResultText.text = "You used " + Player + " and oponent used " + AI + " [ Clash Lost! ]";
     }
     public void Tie(int player, int ai)
     {
@@ -44,6 +44,6 @@ public class ScoreManager : MonoBehaviour
         else if (player == 2) { Player = "Magic"; }
         else if (player == 3) { Player = "Sword"; }
 
-        ResultText.text = "Its a Tie!: " + Player;
+        ResultText.text = "both chose " + Player + " [ Its a Tie! ]";
     }
 }
