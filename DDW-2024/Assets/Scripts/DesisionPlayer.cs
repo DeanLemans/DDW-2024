@@ -8,10 +8,10 @@ using UnityEngine.UI;
 public class DesisionPlayer : MonoBehaviour
 {
     public int P_Hearts = 3;
-    int P_Health = 3;
+    public int P_Health = 3;
 
     public int AI_Hearts = 3;
-    int AI_Health = 3;
+    public int AI_Health = 3;
     #region test
     /*
     InputAction P1Button1;
