@@ -59,30 +59,30 @@ public class MultiplayerCode : MonoBehaviour
         #region player 1
         if (P1Button1.IsPressed())
         {
-
+            Rock(1);
         }
         if (P1Button2.IsPressed())
         {
-          
+            Paper(1);
         }
         if (P1Button3.IsPressed())
         {
-         
+            Scissors(1);
         }
         #endregion 
 
         #region player 2
         if (P2Button1.IsPressed())
         {
-          
+            Rock(2);
         }
         if (P2Button2.IsPressed())
         {
-           
+            Paper(2);
         }
         if (P2Button3.IsPressed())
         {
-            
+            Scissors(2);
         }
         #endregion
     }
